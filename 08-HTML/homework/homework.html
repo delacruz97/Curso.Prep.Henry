@@ -1,32 +1,83 @@
 <html>
+    <!--Cree una página HTML básica.
+  A. Cree el diseño básico para una página HTML usando html, head y body.
+  B. Agregue un elemento de título y asigne a su página el título de "Tarea HTML de [Su nombre]".
+  C. En el cuerpo, crea tres divs.
+    1. En el primer div crea:
+      * un elemento h1 que contiene [Tu nombre].
+      * un elemento h3 que contiene "Henry".
+      * un elemento h4 que contiene "tarea de HTML / CSS".
+    2. En el segundo div crea:
+      * un elemento span que contiene texto que describe su comida favorita.
+      * un elemento 'a' que se vincula a su restaurante favorito.
+    3. En el tercer div crea:
+      * una lista desordenada con dos elementos dentro de la lista
+      * una etiqueta img en cada elemento de la lista que se vincula a su comida favorita. a-->
     <head>
       <title>Tarea HTML de [Maxi]</title>
-      <style type="text/css">
-        body {
-          color: rgb(0, 0, 0);
-          background-color: #9ae9f7 }
-         
-        </style>
+      <!--agregando un poco de estilo a mi documento HTML, con style -->
+      <!-- Agregue una regla de estilo a su elemento h1 cambiando el color del texto -->
+      <!--Agregue una regla de estilo al elemento img dándole un ancho de 400px.  es el ancho de la imagen-->
+      <!--Agregue una regla de estilo a 'thirdDiv' cambiando la altura a 600px y el ancho a 500px.
+    se cambia el ancho y la altura del fondo del recuadro que contiene a las imagenes-->
+      <!--Agregue una regla de estilo a 'thirdDiv' cambiando el color de fondo por el que quiera.
+    se cambia el color del recuadro que contiene las imagenes-->
+    <!--Cambie el tamaño de la fuente para 'spanId' a 18px.-->
+    <!--Asignar al id 'spanId' un margen de 50px-->
+    <!--Asignar al id 'thirdDiv' un relleno (padding) de 50px.-->
+    <!--Asignar al id 'thirdDiv' un BORDE con cualquier ancho de color y estilo que elija.-->
+    <!--
+
+      <style>
+          h1{
+              color: aquamarine;
+          }
+          img{
+              width: 400px;
+          }
+          #thirdDiv{
+              height: 600px;
+              width: 500px;
+              background-color: blueviolet;
+              padding: 50px;
+              border: 5px solid black;
+
+            }
+            #spanId{
+                font-size: 18px;
+                margin: 50px;
+            }
+      </style>
+      -->
+      <!--MOVIMOS TODO EL ARCHIVO DE STYLE CSS A UN ARCHIVO SEPARADO DEL HTML-->
+      <!--Agregue una etiqueta de enlace a su html que importe su nuevo archivo css-->
+      <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <div>
+        <!--Asignar a los otros divs la clase "divClass".-->
+        <div class="divClass">
             <h1>Maximiliano</h1>
             <h3>Henry</h3>
             <h4>Tarea de HTML/CSS</h4>
         </div>
-        <div>
-            <span>Mi comida favorita es la milanesa con pure</span>
+        <!--Asignar a los otros divs la clase "divClass".-->
+        <!--Asignar al span que se encuentra dentro de su segundo div el id "spanId".-->
+        <div class="divClass">
+            <span id="spanId">Mi comida favorita es la milanesa con pure</span>
             <a href="https://resistencia.licuo.com.ar/delivery-en_resistencia.htm">Pedir!</a>
 
         </div>
-        <div>
-
-            <p>Comidas que tambien me gustan:</p> 
+       <!-- Asignar al tercer div el id "thirdDiv". -->
+        <div id="thirdDiv">
             <ul> 
-                <li>Ñoquis</li> 
-                <li>Asado</li> 
+                <li>
+                    <img src="https://caraotadigital.org/wp-content/uploads/2020/08/Lo-mejor-de-dos-milanesas-de-pollo-rellenas-de-pure-de-papa-Video.jpg" alt="imagen de milanesa con pure de papa">
+                </li> 
+                <li>
+                    <img src="https://elgourmet.s3.amazonaws.com/recetas/share/milan_SuLEW9PUrTwyi0npoGIKD5zNqHmcAb.png" alt="imagen de milanesa con pure de zapallo">
+                </li>
             </ul>
-            <img src="https://caraotadigital.org/wp-content/uploads/2020/08/Lo-mejor-de-dos-milanesas-de-pollo-rellenas-de-pure-de-papa-Video.jpg" />
+            
         </div>
         
     </body>
