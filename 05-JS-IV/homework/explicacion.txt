@@ -1,0 +1,72 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+	* Objetos
+	* Propiedades
+	* Métodos
+	* Bucle `for…in`
+	* Notación de puntos vs notación de corchetes
+    -------------------------------------------------------------------------------------------------------------------
+explicaciones:
+
+*Objetos: Los objetos en JavaScript, como en tantos otros lenguajes de programación, 
+se pueden comparar con objetos de la vida real. El concepto de Objetos en JavaScript se
+puede entender con objetos tangibles de la vida real.
+En JavaScript, un objeto es un entidad independiente con propiedades y tipos. 
+Compáralo con una taza, por ejemplo. Una taza es un objeto con propiedades. 
+Una taza tiene un color, un diseño, un peso, un material del que está hecha, etc.
+Del mismo modo, los objetos de JavaScript pueden tener propiedades que definan sus características.
+los objetos contienen mucha información sobre una sola cosa. Los objetos se instancian usando llaves (`{}`).
+ejemplo:
+javascript
+const nuevoObjeto = {};
+
+*Propiedades:
+
+Un objeto de JavaScript tiene propiedades asociadas a él. Una propiedad de un objeto se puede explicar como una variable adjunta al objeto. Las propiedades de un objeto básicamente son lo mismo que las variables comunes de JavaScript, excepto por el nexo con el objeto. Las propiedades de un objeto definen las características del objeto. Accedes a las propiedades de un objeto con una simple notación de puntos:
+
+objectName.propertyName
+Copy to Clipboard
+Como todas las variables de JavaScript, tanto el nombre del objeto (que puede ser una variable normal) como el nombre de la propiedad son sensibles a mayúsculas y minúsculas. Puedes definir propiedades asignándoles un valor. Por ejemplo, vamos a crear un objeto llamado myCar y le vamos a asignar propiedades denominadas make, model, y year de la siguiente manera:
+
+var myCar = new Object();
+myCar.make = 'Ford';
+myCar.model = 'Mustang';
+myCar.year = 1969;
+
+El ejemplo anterior también se podría escribir usando un iniciador de objeto, que es una lista delimitada por comas de cero o más pares de nombres de propiedad y valores asociados de un objeto, encerrados entre llaves ({}):
+
+var myCar = {
+    make: 'Ford',
+    model: 'Mustang',
+    year: 1969
+};
+Copy to Clipboard
+Las propiedades no asignadas de un objeto son undefined (y​no null).
+
+* Métodos:
+Las funciones guardadas en un objeto se denominan métodos.
+
+* Bucle `for…in`: 
+Un bucle for...in solo itera sobre propiedades enumerables que no son símbolo.
+La instrucción for-in itera sobre todas las propiedades enumerables de un objeto que está codificado por cadenas 
+(ignorando los codificados por Símbolos, incluidas las propiedades enumerables heredadas.
+ejemplo:
+-----------------------------------------------------
+const object = { a: 1, b: 2, c: 3 };
+
+for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
+-----------------------------------------------------
+// expected output:
+// "a: 1"
+// "b: 2"
+// "c: 3"
+
+*Notación de puntos vs notación de corchetes:
+
+En Javascript podemos acceder a las propiedades y/o funciones de un objeto usando cualquier notación: 
+el punto . o los corchetes [] , unicamente hay dos principales diferencias: Cuando usamos corchetes podemos
+acceder a propiedades que tienen un espacio o carácter no permitido en la notación de punto
+ (por ejemplo, miMascota.numero de amigos no es válido, pero miMascota["numero de amigos"] sí lo es).
+Si queremos minificar nuestro código, la notación del punto no es válida... debemos usar la notación de corchetes.

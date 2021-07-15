@@ -1,0 +1,15 @@
+La Arrayclase JavaScript es un objeto global que se utiliza en la construcción 
+de matrices; que son objetos similares a listas de alto nivel. Podemos pensar en
+ las matrices como contenedores de almacenamiento para colecciones de datos.
+  Construir una matriz es simple, declarar una variable y establecerla en []. 
+  Luego podemos agregar al contenedor (separadas por coma) tantas cadenas, números o 
+  booleanos como queramos y acceder a esos elementos cuando lo deseemos, mediante el primer indice 0.
+
+eje: 
+```
+javascript
+
+const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel'];
+
+```
+Martin -> esta en posicion 0; Antonio -> posicion 1; Sara -> posicion 2 y Samuel ->posicion 3.

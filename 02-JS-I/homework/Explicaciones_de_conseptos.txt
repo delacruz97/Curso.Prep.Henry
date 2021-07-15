@@ -1,0 +1,11 @@
+* Variables: Una variable es un dato de memoria, que puede cambiar y ser utilizado en diferentes partes del algoritmo, es una forma de almacenar el valor de algo para usar más tarde.
+
+* Strings: Strings es un tipo de dato alfanumerico,su contenido siempre va entre comillas.
+
+* Funciones (argumentos, `return`): Una funcion es un trozo de algoritmo que puede resolver un problema especifico y se lo puede invocar en cualquier parte del algoritmo. 
+.El objeto arguments es una variable local disponible en todas las funciones que no son funciones flecha. Puedes hacer referencia a los argumentos de una función dentro de esa función utilizando su objeto arguments. Tiene entradas para cada argumento con el que se llamó a la función, con el índice de la primera entrada en 0.
+.Cuando una instrucción de retorno se llama en una función, se detiene la ejecución de esta. Si se especifica un valor dado, este se devuelve a quien llama a la función.
+
+* Declaraciones `if`: IF es un tipo de extructura de control simple, y sirve para comparar dos condiciones o para comparar una instuccion con un dato booleano.
+
+* Valores booleanos (`true`, `false`): los valores booleanos, sirven para significar dos estados, verdadero o falso. 
